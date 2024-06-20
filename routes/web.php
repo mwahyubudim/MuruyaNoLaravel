@@ -26,3 +26,12 @@ Route::middleware([
 Route::get('/testphp', function () {
     return view('testphp');
 })->name('testphppage');
+
+Route::get('/testvue', function () {
+    return Inertia::render('TestVue', [
+        // 'canLogin' => Route::has('login'),
+        // 'canRegister' => Route::has('register'),
+        // 'laravelVersion' => Application::VERSION,
+        // 'phpVersion' => PHP_VERSION,
+    ]);
+})->name('testvuepage');
