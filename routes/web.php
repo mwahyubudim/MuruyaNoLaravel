@@ -25,7 +25,7 @@ Route::middleware([
 
 Route::get('/testphp', function () {
     return view('testphp');
-})->name('testphppage');
+})->name('Testphppage');
 
 Route::get('/testvue', function () {
     return Inertia::render('TestVue', [
@@ -34,4 +34,8 @@ Route::get('/testvue', function () {
         // 'laravelVersion' => Application::VERSION,
         // 'phpVersion' => PHP_VERSION,
     ]);
-})->name('testvuepage');
+})->name('Testvuepage');
+
+Route::get('/roguin', function () {
+    return view('roguin');
+})->name('Login');
