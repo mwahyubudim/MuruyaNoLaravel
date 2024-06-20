@@ -23,6 +23,6 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/test', function () {
-    return view('test');
-})->name('testpage');
+Route::get('/testphp', function () {
+    return view('testphp');
+})->name('testphppage');
